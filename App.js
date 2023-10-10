@@ -42,28 +42,28 @@ const Auth = () => {
 
 const App = () => {
     return (
-        <NavigationContainer>
-            <Stack.Navigator initialRouteName='SplashScreen'>
-                {/* splash screen will appear once for 5 seconds */}
-                <StackScreen
-                    name="Splash Screen"
-                    component={SplashScreen}
-                    options={{headerShown: false}} // hiding header for splash screen
-                />
-                {/* Auth navigator include login and signup */}
-                <Stack.Screen
-                    name="Auth"
-                    component={Auth}
-                    options={{headerShown: false}}
-                />
-                {/* Navigation Drawer as a landing page */}
-                <Stack.Screen
-                    name="Drawer Navigation Routes"
-                    component={DrawerNavigationRoutes}
-                    options={{headerShown: false}} // hiding header for navigation drawer
-                />
-            </Stack.Navigator>
-        </NavigationContainer>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="SplashScreen">
+          {/* splash screen will appear once for 5 seconds */}
+          <Stack.Screen
+            name="Splash Screen"
+            component={SplashScreen}
+            options={{headerShown: false}} // hiding header for splash screen
+          />
+          {/* Auth navigator include login and signup */}
+          <Stack.Screen
+            name="Auth"
+            component={Auth}
+            options={{headerShown: false}}
+          />
+          {/* Navigation Drawer as a landing page */}
+          <Stack.Screen
+            name="Drawer Navigation Routes"
+            component={DrawerNavigationRoutes}
+            options={{headerShown: false}} // hiding header for navigation drawer
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
     );
 };
 
